@@ -87,7 +87,8 @@ void peek()
 
 ## Output:
 
-![Screenshot 2025-05-07 231702](https://github.com/user-attachments/assets/7bcea841-c291-4236-a0e9-c1205d6beccc)
+![image](https://github.com/user-attachments/assets/384381c5-619c-4709-b504-328ec4313ed9)
+
 
 
 ## Result:
