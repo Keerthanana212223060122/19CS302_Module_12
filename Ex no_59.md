@@ -27,7 +27,7 @@ To write a C functions to perform-enqueue, dequeue, peek, display in Queue using
 ```c program
 struct Node
 {
-   char data;
+   float data;
    struct Node *next;
 }*front=NULL,*rear=NULL;
 void enqueue(float data)
@@ -52,7 +52,7 @@ void display()
     ptr=front;
     while(ptr!=NULL)
     {
-        printf("%c\n",ptr->data);
+        printf("%.3f\n",ptr->data);
         ptr=ptr->next;
     }
 }
@@ -73,13 +73,13 @@ void dequeue()
 }
 void peek()
 {
-    printf("peek:%c\n",front->data);
+    printf("peek:%.3f\n",front->data);
 }
 ```
 
 ## Output:
 
-![Screenshot 2025-05-07 232147](https://github.com/user-attachments/assets/7e4a6acd-44c3-4222-8386-977f1291368d)
+![image](https://github.com/user-attachments/assets/13f1b481-e75c-4bc6-9b14-174788dd49e4)
 
 
 ## Result:
