@@ -15,7 +15,7 @@ To write a C function to display stack elements using Linked List.
 ```c program
 Struct Node 
 { 
-int data; 
+float data; 
 struct Node *next; 
 }*head; 
 void display() 
@@ -23,7 +23,7 @@ void display()
 struct Node *temp= head; 
 while(temp!=NULL) 
 { 
-printf("%d\n",temp->data); 
+printf("%.2f\n",temp->data); 
 temp=temp->next; 
 } 
  
@@ -31,7 +31,7 @@ temp=temp->next;
 ```
 ## Output:
 
-![Screenshot 2025-05-07 231334](https://github.com/user-attachments/assets/d90aa2bb-c976-4475-8cd5-a789e5912b96)
+![image](https://github.com/user-attachments/assets/febd2b64-c8eb-4dda-bc3a-ad746a67ac5b)
 
 
 ## Result:
