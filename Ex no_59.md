@@ -3,7 +3,7 @@
 ## AIM:
 To write a C functions to perform-enqueue, dequeue, peek, display in Queue using Linked List.
 
-## Algorithm
+## Algorithm:
 
 
 1. **Start**  
@@ -24,7 +24,7 @@ To write a C functions to perform-enqueue, dequeue, peek, display in Queue using
 
 
 ## Program:
-```
+```c program
 struct Node
 {
    char data;
