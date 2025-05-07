@@ -35,7 +35,7 @@ struct Node
 char data;  
 struct Node *next;  
 }*head,*t;
-void push(float data)  
+void push(char data)  
 {  
     struct Node *n=(struct Node *)malloc(sizeof(struct Node));
     n->data=data;
