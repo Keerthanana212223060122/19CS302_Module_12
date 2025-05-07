@@ -1,27 +1,93 @@
-# EX 57 C function to perfom push,pop and peek functions in Stack using Linked List.( store float data in stack)
-## DATE:
+# EX 57 C function to perfom push,pop and peek functions in Stack using Linked List.( store char data in stack)
+## DATE:07-05-2025
 ## AIM:
 To write a C function to perfom push,pop and peek functions in Stack using Linked List.
 
-## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+## Algorithm:
+
+
+1. **Start**  
+2. Define a structure `Node` with two fields:  
+   - `data` (float type)  
+   - `next` (pointer to the next node)  
+3. Initialize `top` as `NULL` (empty stack).  
+4. **Push Operation:**  
+   - Create a new node.  
+   - Assign the float value to `data`.  
+   - Set `next` to `top`.  
+   - Update `top` to point to the new node.  
+5. **Pop Operation:**  
+   - Check if `top` is `NULL` (stack is empty).  
+   - If not, store `top->data`.  
+   - Update `top` to `top->next`.  
+   - Free the popped node’s memory.  
+6. **Peek Operation:**  
+   - Check if `top` is `NULL`.  
+   - If not, display `top->data`.  
+7. **End**  
+
+
 
 ## Program:
-```
-/*
-function to perfom push,pop and peek functions in Stack using Linked List.( store float data in stack)
-
-Developed by: 
-RegisterNumber:  
-*/
+```c program
+struct Node   
+{  
+char data;  
+struct Node *next;  
+}*head,*t;
+void push(float data)  
+{  
+    struct Node *n=(struct Node *)malloc(sizeof(struct Node));
+    n->data=data;
+    n->next=0;
+    if(head==NULL)
+    {
+        head=n;
+    }
+    else
+    {
+        n->next=head;
+        head=n;
+    }
+}  
+void pop()  
+{  
+    if(head==NULL)
+    {
+        printf(" ");
+    }
+    else
+    {
+        head=head->next;
+    }
+}  
+void display()  
+{  
+    if(head==NULL)
+    {
+        printf(" ");
+    }
+    else
+    {
+        printf("stack:");
+        t=head;
+        while(t!=0)
+        {
+            printf("%c ",t->data);
+            t=t->next;
+        }
+        printf("\n");
+    }
+}  
+void peek()
+{
+    printf("stack top:%c\n",head->data);
+}
 ```
 
 ## Output:
 
+![Screenshot 2025-05-07 231702](https://github.com/user-attachments/assets/7bcea841-c291-4236-a0e9-c1205d6beccc)
 
 
 ## Result:
